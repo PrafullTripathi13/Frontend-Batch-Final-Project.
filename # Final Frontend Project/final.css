@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+#nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 1vw 5vw;
+    background-color:  rgb(1, 17, 1);
+}
+
+#nleft>a{
+    font-family: "Bigilla";
+    justify-content: space-between;
+    padding-right: 1vw;
+    padding-left: 3vw;
+    font-size: 1vw;
+    color: rgb(217, 129, 96);
+    
+
+}
+#nright>a{
+    font-family: "Bigilla";
+    justify-content: space-between;
+    padding-right:1vw;
+    padding-left: 5vw;
+    font-size: 1vw;
+    color: rgb(217, 129, 96);
+    text-decoration: none;
+}
+
+#ncenter{
+    position: absolute;
+    height: 2vw;
+    width: 4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#ncenter>h1{
+    font-family:"Bigilla" ;
+     font-size: 2vw;
+     color: rgb(239, 115, 70);
+     font-weight: 800;
+}
+#home{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(1, 17, 1);
+}
+#controller{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#circle{
+   height: 28vw;
+   width: 28vw;
+   border-radius: 50%;
+   background-image: url(https://media.istockphoto.com/photos/dewdrops-picture-id1340882031?k=20&m=1340882031&s=612x612&w=0&h=x88ehwWG-yXUUN8bZ4ciJcTZ_emHsPy6vnKeb2E4cPM=);
+   background-size: cover;
+   background-position: bottom;
+}
+#text{
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#text>h1{
+     font-family: "Hello paris sans extralight";
+     text-transform: uppercase;
+     font-size: 12vw ;
+     font-weight:100;
+     line-height: 9vw;
+     color:  rgb(248, 199, 107);
+
+}
+
+#bigcircle{
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    border-radius: 50%;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: solid 1px rgb(235, 0, 0);
+}
+#dot{
+    font-family: "bigilla";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(229, 107, 240);
+    top: 50%;
+    right: 10%;
+    z-index: 999999;
+    transform: translate(0%,-50%);
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    border: 1px solid red;
+
+}
+ #hbottom{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: absolute;
+     margin-top: 20%;
+     margin-left: 50%;
+     height: 8vw;
+     width: 30vw;
+     transform: translate(-50%,0%);
+    
+ }
+ .star{
+     text-align: center;
+     line-height: 1px;
+ }
+ .star>h3{
+     font-family: "bigilla";
+     font-size: 4vw;
+     line-height: 1vw;
+     color: red ;
+ }
+ .star>a{
+     font-family: "bigilla";
+     font-size: 1vw;
+     line-height: 2vw;
+     color: rgb(190, 68, 34);
+ }
+
+
+#second{
+    position: relative;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vw;
+    background-color: rgb(1, 7, 1);
+
+}
+
+#photoseries{
+    position: absolute;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+    gap: 40px;
+     padding: 0px 40px;
+}
+#photoseries .photo{
+    align-items: center;
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: rgb(111, 169, 171);
+}
+#photoseries::-webkit-scrollbar{
+      display: none;
+  }
+
+  #second>h1{
+      left: 0;
+      position: absolute;
+      z-index: 99;
+      font-size: 4vw;
+      font-family:"Bigilla" ;
+      font-weight: 900;
+      white-space: nowrap;
+      animation: abcd 10s linear infinite both;
+  }
+
+  #third{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+.stripe{
+    cursor: pointer;
+    position: relative;
+    width: 4%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    overflow: hidden;
+    z-index: 99999;
+    background-color: rgb(223, 90, 90);
+}
+
+.stripe:nth-child(2){
+    position: absolute;
+    right: 12%;
+    z-index: 99;
+    background-color: rgb(86, 145, 213);
+}
+
+.stripe:nth-child(3){
+    position: absolute;
+    right: 8%;
+    z-index: 999;
+    background-color: rgb(226, 149, 71);
+}
+
+.stripe:nth-child(4){
+    position: absolute;
+    right: 4%;
+    z-index: 9999;
+    background-color: rgb(155, 103, 228);
+}
+.stripe>p{
+    position: absolute;
+    top: 14vw;
+    left: 16vw;
+    width: 28vw;
+     
+    opacity: 0;
+    font-size: 2vw;
+    pointer-events: none;
+}
+.stripe i{
+    pointer-events: none;
+    left: 18px;
+    top: 30px;
+    opacity: 0;
+    position: absolute;
+    font-size: 1.5vw;
+}
+
+.stripe h4{
+    width:  200px;
+    pointer-events: none;
+    /* background-color: yellow; */
+    font-family: "Gilroy";
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10%;
+    font-size: 1vw;
+    left: 30px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+}
+
+#thleft{
+    padding: 4vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209, 209, 209);
+}
+
+#thleft h1{
+    font-size: 5vw;
+}
+
+#thleft :is(h1, p){
+    font-family: "Helvetica";
+    font-weight: 500;
+}
+
+#thleft p{
+    width: 37vw;
+    margin-top: 2vw;
+}
+#fourth{
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(23, 19, 19, 0.875);
+    padding: 5vw 5vw;
+}
+ #elems{
+    padding: 5vw 5vw;
+}
+.elem{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 2vw;
+}
+.elem img{
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    height: 40vh;
+}
+.elem h1{
+    width: fit-content;
+    color: white;
+    font-size: 6vw;
+    font-weight: 900;
+    position: relative;
+    z-index: 9999;
+}
+.elem h1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
